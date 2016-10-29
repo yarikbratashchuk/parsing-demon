@@ -1,0 +1,6 @@
+{
+	"api": "http://avtoparts.com.ua/Search/ComponentsByCategory",
+	"method":"POST",
+	"headers":["X-Requested-With: XMLHttpRequest"],
+	"form": ["category=39", "addInfo=true", "page=increment"]
+}
