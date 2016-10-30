@@ -1,0 +1,5 @@
+{
+"valDepths":[3,2],
+"selfClosing":["input"],
+"ignore":["button"]
+}
