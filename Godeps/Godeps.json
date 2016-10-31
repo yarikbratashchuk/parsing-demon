@@ -1,0 +1,25 @@
+{
+	"ImportPath": "parsing-demon",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "go1.0-cutoff-123-gae8357d",
+			"Rev": "ae8357db35d721c58dcdc911318b55bef6b1b001"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/oid",
+			"Comment": "go1.0-cutoff-123-gae8357d",
+			"Rev": "ae8357db35d721c58dcdc911318b55bef6b1b001"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "cf4effbb9db1f3ef07f7e1891402991b6afbb276"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "cf4effbb9db1f3ef07f7e1891402991b6afbb276"
+		}
+	]
+}
