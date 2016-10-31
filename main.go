@@ -228,11 +228,11 @@ func saveToDB(data []interface{}) {
 		}
 	}
 	fData = append(fData, data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], partsCategory, less_than)
-	row := db.QueryRow("SELECT code FROM autoParts WHERE code=$1", data[0])
+	row := db.QueryRow("SELECT code FROM autoParts_autoparts WHERE code=$1", data[0])
 	err := row.Scan(&code)
 	if err != nil {
 		log.Print(err)
-		err := db.QueryRow("INSERT INTO autoParts (code, part_name, brand, quantity, reserved, "+
+		err := db.QueryRow("INSERT INTO autoParts_autoparts (code, part_name, brand, quantity, reserved, "+
 			"price, price_with_discount, description, category, less_than) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)", fData...)
 		if err != nil {
 			log.Println(err)
@@ -240,7 +240,7 @@ func saveToDB(data []interface{}) {
 		return
 	}
 	fData = append(fData[1:], code)
-	_, err = db.Exec("UPDATE autoParts SET part_name=$1, brand=$2, quantity=$3, reserved=$4, "+
+	_, err = db.Exec("UPDATE autoParts_autoparts SET part_name=$1, brand=$2, quantity=$3, reserved=$4, "+
 		"price=$5, price_with_discount=$6, description=$7, category=$8, less_than=$9 WHERE code=$10", fData...)
 	if err != nil {
 		log.Println(err)
