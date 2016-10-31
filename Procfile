@@ -1,1 +1,1 @@
-web: parsing-demon
+worker: parsing-demon
