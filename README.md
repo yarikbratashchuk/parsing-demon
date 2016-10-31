@@ -1,2 +1,2 @@
 # parsing-demon
-test deamon for parsing html tables
+test daemon for parsing html tables
