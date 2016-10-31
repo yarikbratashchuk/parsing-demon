@@ -1,5 +1,7 @@
 {
 "valDepths":[3,2],
 "selfClosing":["input"],
-"ignore":["button"]
+"ignore":["button"],
+"updateDBPeriod": 1,
+"cellsInTableRow": 8
 }

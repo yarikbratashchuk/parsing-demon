@@ -2,5 +2,6 @@
 	"api": "http://avtoparts.com.ua/Search/ComponentsByCategory",
 	"method":"POST",
 	"headers":["X-Requested-With: XMLHttpRequest"],
-	"form": ["category=39", "addInfo=true", "page=increment"]
+	"form": ["category=39", "addInfo=true", "page=increment"],
+	"dbURL": "postgres://eclbltebsujebo:b7orRPF-FInBwUkh7bLvZabtok@ec2-54-246-118-26.eu-west-1.compute.amazonaws.com:5432/dc10a373jr483p"
 }
